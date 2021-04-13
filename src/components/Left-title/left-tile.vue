@@ -259,7 +259,7 @@ export default {
       },
       
       {
-        id:7,
+        id:6,
         url:require("../../assets/css/main-img/center-img10.webp"),
         name:'極速拍檔-jacky-jojo',
         signature:'7200幹Ta!!!',

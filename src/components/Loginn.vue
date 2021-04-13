@@ -132,7 +132,6 @@
             </el-row>
           </el-card>
           <!-- 文字链接区域 -->
-
           <div class="text" shadow="never">
             <div class="longttext">
               <a href="#">动画</a>
@@ -242,7 +241,7 @@
             <div class="img0">
               <el-image :src="require('../assets/css/Image/3.webp')" class="img1"></el-image>
               <div class="yincang">
-                <p>苹果三月发表会确定延期为4月</p>
+                <p>苹果三月发表会确定延期为4月,<br/>库克不讲武德发布iphone13</p>
                 <p><span>UP</span>逗川kshadow</p>
                 <p>9.1万播放</p>
               </div>
@@ -256,6 +255,7 @@
                 <p>9.1万播放</p>
               </div>
             </div>
+            
 
             <div class="img0">
               <el-image :src="require('../assets/css/Image/4.webp')" class="img1"></el-image>
@@ -378,8 +378,12 @@
 
 
               </ul>
+              
             <div class="whiteboard">
-             aaaa
+             
+            </div>
+            <div class="topboard">
+             aa
             </div>
             </div>
             
@@ -612,7 +616,7 @@
           
         </div>
         
-        <el-card>
+        <el-card> 
 
 
           <div class="footer-top">
@@ -1024,7 +1028,7 @@ import lefttile from '@/components/Left-title/left-tile'
     //margin-top: 50px;//暂时设定.return
     margin-left: 5%;
     //background-color: #ff5c7c;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2) //添加阴影
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1) //添加阴影
 
 
   }
@@ -1036,7 +1040,7 @@ import lefttile from '@/components/Left-title/left-tile'
 
   .el-image {
     border-radius: 2px;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2)
+    //box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
   }
 
   // 左边边图标
@@ -1188,6 +1192,7 @@ import lefttile from '@/components/Left-title/left-tile'
   .di4 {
     margin-top: 7.5%;
     margin-left: 0.3%
+    
   }
 
   .zj {
@@ -1222,13 +1227,13 @@ import lefttile from '@/components/Left-title/left-tile'
     margin: 0px;
     width: 1700px;
     height: 260px;
-    //background-color: rgb(250, 59, 59);
+    background-color: rgba(255, 0, 0, 0);
     margin-left: 37.3%;
     margin-top: -14.3%;
     display: flex;
     width: calc(100% - 10px);
     overflow: hidden;
-
+    
 
   }
 
@@ -1247,7 +1252,7 @@ import lefttile from '@/components/Left-title/left-tile'
   }
 
   .img0:hover .yincang {
-    transform: translateY(-75px);
+    transform: translateY(-70px);
     background-color: rgba(34, 20, 20, 0.6);
     //transition: .1s linear;
   }
@@ -1675,9 +1680,16 @@ import lefttile from '@/components/Left-title/left-tile'
   }
   .whiteboard{
     position: relative;
-    background-color: white;
-    
+    background-color: pink;
     left: 659px;
     top: -118px;
+  }
+  .topboard{
+    position: relative;
+    background-color: white;
+    left: 659px;
+    top: -278px;
+    height: 15px;
+
   }
 </style>

@@ -38,6 +38,7 @@
 
   <!-- for循环渲染 -->
   <el-card class="live-card">
+    <div class="live-div"> 
    <ul>
   <li v-for=" (item,index) in titles" :key="index" class="live-number">
     <a href="" class="title-treenum">{{item.id}}</a>
@@ -66,6 +67,7 @@
   </li>
   
 </ul>
+</div>
   </el-card>
   <!-- < div v-for="o in items" :key="o" >
    <a href="">{{o.name}}</a> 
@@ -175,9 +177,13 @@ float: left;
   font-size: 1px;
 }
 .live-card{
-  
+ 
   width: 320px;
-  height: auto;
+  height:400px;
+}
+.live-div{
+  position: relative;
+  top:-50px;
 }
 .circle {
   position:relative;

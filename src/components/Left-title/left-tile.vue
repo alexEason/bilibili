@@ -165,6 +165,7 @@
 
   <!-- 动画效果 -->
   <el-card class="live-card">
+    <div class="live-div">
    <ul>
   <li v-for=" (item,index) in titles" :key="index" class="live-number">
     <a href="" class="title-treenum">{{item.id}}</a>
@@ -187,12 +188,14 @@
     </ul>
     <br>
     <div >
+      
       <a class="el-icon-user-solid title-count">{{item.count}}</a>      
     </div>    
-    <!-- <a href="" class="title-signature" >{{i.signature}}</a> -->  
+     
   </li>
   
 </ul>
+</div>
   </el-card>
   
   
@@ -254,8 +257,9 @@ export default {
         signature:'歡迎收看XRX得Channel啦',
         count:'157.9万',
       },
+      
       {
-        id:6,
+        id:7,
         url:require("../../assets/css/main-img/center-img10.webp"),
         name:'極速拍檔-jacky-jojo',
         signature:'7200幹Ta!!!',
@@ -287,11 +291,19 @@ float: left;
   ul li{
     list-style: none;
   }
-
+  ul li  :hover  {
+    color: #00a1d6;
+  }
+.live-card{
+ 
+  position: relative;
+  top: -50px;
+}
 
 .make-wrap{
 
   width: 120px;
+  border:  0 solid white;
   display: block;
   white-space:nowrap;
   overflow: hidden;
@@ -301,7 +313,7 @@ float: left;
   font-size: 1px;
 }
 .live-card{
-  
+  border-radius: 0px;
   width: 320px;
   height: auto;
 }
@@ -333,7 +345,6 @@ float: left;
 } 
 .title-name{
   display: flex;
-  //background-color: yellow;
   position: relative;
   color: #333;
   float: left;
@@ -342,9 +353,7 @@ float: left;
   font-size: 13px;
 }
 .title-signature {
- 
  display: flex;
-  background-color: yellow;
   position: relative;
   color: #333;
   float: left;

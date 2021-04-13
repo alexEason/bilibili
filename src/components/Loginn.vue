@@ -378,7 +378,12 @@
 
 
               </ul>
+            <div class="whiteboard">
+             aaaa
             </div>
+            </div>
+            
+           
 
             <div class="left-img">
               <el-image style="width: 320px; height: 185px" :src="require('../assets/css/Image/main-top-img7.png')">
@@ -395,7 +400,7 @@
               </p>
             </div>
             <div class="center-button">
-              <el-button type="info" class="center-btn" @click="centerBtn">换一换</el-button>
+              <el-button type="info" class="center-btn" >换一换</el-button>
               <el-button type="info" class="center-btn">更多 ></el-button>
             </div>
 
@@ -715,16 +720,8 @@ import lefttile from '@/components/Left-title/left-tile'
       //                   testH.style.height= this.bannerHeight+"px";
       //               })
       //   },
-      centerBtn() {
-
-
-
-      },
-      methods:{
-        indexMethod(index){
-          return index*2
-        }
-      }
+      
+      
     }    
   // mounted(){
   //               // this.imgLoad();
@@ -1635,7 +1632,7 @@ import lefttile from '@/components/Left-title/left-tile'
 
   }
 
-  .el-footer .footer-top .footer-top-1 ul li:hover a {
+  .el-footer .footer-top .footer-top-1 ul li:hover {
     color: #00a1d6;
   }
 
@@ -1675,5 +1672,12 @@ import lefttile from '@/components/Left-title/left-tile'
 
   .el-footer .footer-top .footer-top-2 ul li:hover a {
     color: #00A1D6;
+  }
+  .whiteboard{
+    position: relative;
+    background-color: white;
+    
+    left: 659px;
+    top: -118px;
   }
 </style>

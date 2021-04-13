@@ -250,7 +250,7 @@
             <div class="img0">
               <el-image :src="require('../assets/css/Image/2.jpg')" class="img1"></el-image>
               <div class="yincang">
-                <p>赛博朋克2077里的地铁真的能坐！体验堪比过山车！</p>
+                <p>赛博朋克20 77里的地铁真的能坐！体验堪比过山车！</p>
                 <p><span>UP</span>逗川kshadow</p>
                 <p>9.1万播放</p>
               </div>
@@ -274,14 +274,25 @@
                 <p>9.1万播放</p>
               </div>
             </div>
+            <el-card class="beta-card">
+              <div class="di2">
+              <ul>
+              <li v-for=" (item,index) in tenimg" :key="index">
+                <el-image :src="item.picture"></el-image>
+                <br/>
+                <p>{{item.name}}</p>
+              </li>
+            </ul>
+            </div>
+            </el-card>
+            
 
 
-
-            <div class="di2">
+            <!-- <div class="di2">
               <el-image :src="require('../assets/css/Image/4.webp')" class="img1"></el-image>
               <div class="yincang">
-                <p>2021年9月iphone13发布啦,中国大陆首发6000起步</p>
-                <p><span>UP</span>逗川kshadow</p>
+                <p class="pw">2021年9月iphone13发布啦,中国大陆首发6000起步</p>  
+                <p><a>UP</a>逗川kshadow</p>
                 <p>9.1万播放</p>
               </div>
             </div>
@@ -290,7 +301,6 @@
               <el-image :src="require('../assets/css/Image/4.webp')" class="img1"></el-image>
               <div class="yincang">
                 <p>2021年9月iphone13发布啦,中国大陆首发6000起步</p>
-
                 <p><span>UP</span>逗川kshadow</p>
                 <p>9.1万播放</p>
               </div>
@@ -322,7 +332,7 @@
                 <p><span>UP</span>逗川kshadow</p>
                 <p>9.1万播放</p>
               </div>
-            </div>
+            </div> -->
 
 
 
@@ -380,10 +390,10 @@
               </ul>
               
             <div class="whiteboard">
-             
+            aa 
             </div>
             <div class="topboard">
-             aa
+             底部遮罩
             </div>
             </div>
             
@@ -692,8 +702,22 @@ import lefttile from '@/components/Left-title/left-tile'
           },
           {
             id: 1,
-            idView: require('../assets/css/Image/main.webp')
+            idView: require('../assets/css/Image/main.webp'),
           },
+        ],
+        tenimg:[
+          {
+            
+            picture:require('../assets/css/main-img/center-img8.webp'),
+            name:'4月Aplle春季发布会',
+            numberId:'库克'
+          },
+          {
+            picture:require('../assets/css/Image/4.webp'),
+            name:'iphon14',
+            numberId:'SIDIFEN',
+
+          } 
         ],
     
         activeName: 'first',
@@ -748,6 +772,10 @@ import lefttile from '@/components/Left-title/left-tile'
 
   // }
   // 导航栏样式
+  .beta-card{
+    width: 1200px;
+    
+  }
   .banner {
     // position: relative;
     position: fixed;
@@ -1180,7 +1208,7 @@ import lefttile from '@/components/Left-title/left-tile'
   .di2 {
     width: 206px;
     height: 116px;
-    margin-left: -61.5%;
+    margin-left: -62.7%;
     margin-top: 7.5%;
   }
 
@@ -1236,39 +1264,43 @@ import lefttile from '@/components/Left-title/left-tile'
     
 
   }
+  .pw{
+    width: 206px;
+  }
 
   .yincang {
-    width: 200px;
-    height: 118px;
+    position: relative;
+    width: 206px;
+    height: 114px;
     color: white;
     font-size: 14px;
-    border-radius: 2px;
+    border-radius: 4px;
     padding-bottom: -10%;
-    background-color: #ff848400;
+    background-color: #ff8484;
     margin-top: -30%;
     transform: translateY(0px);
     transition: .1s linear;
-    padding: 0px 3px
+    padding: 0px 2px
   }
 
   .img0:hover .yincang {
-    transform: translateY(-70px);
+    transform: translateY(-73.6px);
     background-color: rgba(34, 20, 20, 0.6);
     //transition: .1s linear;
   }
 
   .di2:hover .yincang {
-    transform: translateY(-75px);
+    transform: translateY(-73.6px);
     background-color: rgba(34, 20, 20, 0.6);
   }
 
   .di3:hover .yincang {
-    transform: translateY(-75px);
+    transform: translateY(-73.6px);
     background-color: rgba(34, 20, 20, 0.6);
   }
 
   .di4:hover .yincang {
-    transform: translateY(-75px);
+    transform: translateY(-73.6px);
     background-color: rgba(34, 20, 20, 0.6);
 
   }
@@ -1680,7 +1712,7 @@ import lefttile from '@/components/Left-title/left-tile'
   }
   .whiteboard{
     position: relative;
-    background-color: pink;
+    background-color: white;
     left: 659px;
     top: -118px;
   }
@@ -1688,8 +1720,8 @@ import lefttile from '@/components/Left-title/left-tile'
     position: relative;
     background-color: white;
     left: 659px;
-    top: -278px;
-    height: 15px;
+    top: -275px;
+    height: 10px;
 
   }
 </style>

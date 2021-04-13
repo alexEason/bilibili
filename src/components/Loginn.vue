@@ -277,10 +277,11 @@
             <el-card class="beta-card">
               <div class="di2">
               <ul>
-              <li v-for=" (item,index) in tenimg" :key="index">
-                <el-image :src="item.picture"></el-image>
-                <br/>
-                <p>{{item.name}}</p>
+              <li v-for=" (i,index) in tenimg" :key="index">
+                <el-image :src="i.picture">11</el-image>
+                
+                <a>{{i.name}}</a>
+                <a>{{i.numberId}}</a>
               </li>
             </ul>
             </div>
@@ -698,11 +699,13 @@ import lefttile from '@/components/Left-title/left-tile'
         ],
         mainimg: [{
             id: 0,
-            idView: require('../assets/css/Image/main-top-img10.jpg')
+            idView: require('../assets/css/Image/main-top-img10.jpg'),
+            title:'赛博朋克2077里的地铁真的能坐！体验堪比过山车！'
           },
           {
             id: 1,
             idView: require('../assets/css/Image/main.webp'),
+            
           },
         ],
         tenimg:[
@@ -764,7 +767,7 @@ import lefttile from '@/components/Left-title/left-tile'
 
 
 
-<style lang="less" scoped>
+<style lang="less" scoped> 
   // ul li{
   //   list-style: none;
   // }
@@ -773,8 +776,10 @@ import lefttile from '@/components/Left-title/left-tile'
   // }
   // 导航栏样式
   .beta-card{
-    width: 1200px;
-    
+    position: relative;
+    width: 1150px;  
+    background-color: #00A1D6;
+    left: -1200px;
   }
   .banner {
     // position: relative;

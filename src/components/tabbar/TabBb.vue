@@ -66,16 +66,28 @@
          <div></div>
        </el-card> -->
           
-    <lefttile></lefttile>
+    
     
   
   <!-- <el-image v-for=" e in circleUrl" :key="e.circleUrl" :size="43" :src="circleUrl" class="avtars" ></el-image>  -->
    
+  <el-card class="tencard">
+    
+  
+  <ul >
+    <li v-for="(item,index) in topimg" :key="index" class="ulimg">
 
-  <ul>
-    <li></li>
+      <el-image
+        :src="item.picture" class="liimg"
+        ></el-image>
+        <br/>
+      
+        <!-- <p>{{item.title}}</p> -->
+      
+
+    </li>
   </ul>
-  <el-avater ></el-avater>
+  </el-card>
   
   <el-avatar src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
 
@@ -98,7 +110,7 @@
 
 
 <script>
- import lefttile from '@/components/Left-title/left-tile'
+
 export default {
   data () {
     return {
@@ -111,7 +123,26 @@ export default {
       //   {id:0,idView:require('../../assets/css/Image/banner1.jpg')},
       //   {id:1,idView:require('../../assets/css/Image/banner1.png')},
       //   {id:2,idView:require('../../assets/css/Image/banner2.jpg')}
-      circleUrl:require('../../assets/css/main-img/center-img4.png')
+      circleUrl:require('../../assets/css/main-img/center-img4.png'),
+      topimg:[
+        {
+          picture:require('../../assets/css/main-img/center-img2.webp'),
+          title:'赛博朋克2077里的地铁真的能坐！体验堪比过山车！'
+        },
+        {
+          picture:require('../../assets/css/main-img/center-img1.webp'),
+          title:'4'
+        },
+        {
+          picture:require('../../assets/css/main-img/center-img2.webp')
+        },
+        {
+          picture:require('../../assets/css/main-img/center-img1.webp')
+        },
+        {
+          picture:require('../../assets/css/main-img/center-img6.webp')
+        }
+      ]
       
       
       // ],
@@ -152,6 +183,26 @@ export default {
   padding: 0;
    
 }
+// 开始
+.tencard{
+  width: 1070px;
+  height: 242px;
+}
+.ulimg{
+  //display: block;
+  float: left;
+  list-style: none;
+  padding-left:10px;
+}
+
+.liimg{
+  position: relative;
+  //float: left;
+  width: 206px;
+  height:119px;
+  border-radius: 4px;
+}
+// 结束
 .app{
   background-color: rgb(255, 255, 255);
   min-height: 100vh;

@@ -72,16 +72,21 @@
   <!-- <el-image v-for=" e in circleUrl" :key="e.circleUrl" :size="43" :src="circleUrl" class="avtars" ></el-image>  -->
    
   <el-card class="tencard">
-    
-  
-  <ul >
+  <ul > 
     <li v-for="(item,index) in topimg" :key="index" class="ulimg">
-
+      
       <el-image
         :src="item.picture" class="liimg"
         ></el-image>
         <br/>
-      
+      <el-image
+        :src="item.picture" class="liimg"
+        ></el-image>
+      <el-card class="font-card">
+        <p>{{item.title}}</p>
+        <br/>UP
+        
+      </el-card>
         <!-- <p>{{item.title}}</p> -->
       
 
@@ -130,17 +135,21 @@ export default {
           title:'赛博朋克2077里的地铁真的能坐！体验堪比过山车！'
         },
         {
-          picture:require('../../assets/css/main-img/center-img1.webp'),
-          title:'4'
+          picture:require('../../assets/css/Image/ApLOGO.webp'),
+          title:'The special event is on Tuesday,April 20,at Apple Park in Cupertino, CA. You canget all the details on Apple.com'
         },
         {
-          picture:require('../../assets/css/main-img/center-img2.webp')
+          picture:require('../../assets/css/Image/4.webp'),
+          title:'Tom and Jerry'
+
         },
         {
-          picture:require('../../assets/css/main-img/center-img1.webp')
+          picture:require('../../assets/css/Image/amen.webp'),
+          title:'ドラえもん'
         },
         {
-          picture:require('../../assets/css/main-img/center-img6.webp')
+          picture:require('../../assets/css/main-img/center-img6.webp'),
+          title:'名探偵コナン'
         }
       ]
       
@@ -185,8 +194,8 @@ export default {
 }
 // 开始
 .tencard{
-  width: 1070px;
-  height: 242px;
+  width: 1150px;
+  //height: 250px;
 }
 .ulimg{
   //display: block;
@@ -197,10 +206,25 @@ export default {
 
 .liimg{
   position: relative;
+  right: 20px;
   //float: left;
   width: 206px;
   height:119px;
   border-radius: 4px;
+}
+.font-card{
+  position: relative;
+  right:20px;
+  width: 206px;
+  height: 119px;
+  top: -125px;
+  
+  //padding-left: 10px;
+
+  border-radius: 4px;
+}
+.font-card p{
+  font-size:1px;
 }
 // 结束
 .app{

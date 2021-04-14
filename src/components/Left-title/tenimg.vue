@@ -53,13 +53,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.ddd{
-  width: 1200px;
-  height: 15px;
-  position: relative;
-  top: -142px;
-  background-color: white;
-}
+
 .tenimg{
   width: 1200px;
   height: 280px;

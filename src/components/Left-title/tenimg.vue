@@ -70,6 +70,8 @@ export default {
   margin-left: 10px;
   width: 206px;
   height: 119px;
+  top: -19px;
+  left: -29px;
   border-radius: 4px;
 
 }
@@ -78,12 +80,14 @@ export default {
   margin-left: 10px;
   width: 206px;
   height: 119px;
+  top: -19px;
+  left: -29px;
   top: -111px;
   border-radius: 4px;
 }
 .dfont{
   position: relative;
-  left: 10px;
+  left: -18px;
   top: -25px;
   width: 206px;
   height: 120px;
@@ -109,7 +113,7 @@ export default {
 
 }
 .dimg:hover .tfont{
-  transform: translateY(-106px);
+  transform: translateY(-120px);
   height: 119px;
   background-color: rgba(51, 51, 51, 0.431);
   border-radius: 4px;
@@ -117,7 +121,7 @@ export default {
 }
 
 .dimg:hover .dfont{
-  transform: translateY(-101px);
+  transform: translateY(-120px);
   background-color: rgba(51, 51, 51, 0.431);
   border-radius: 4px;
   color: white;

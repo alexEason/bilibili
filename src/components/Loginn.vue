@@ -391,12 +391,8 @@
 
               </ul>
               
-            <div class="whiteboard">
-            aa 
-            </div>
-            <div class="topboard">
-             底部遮罩
-            </div>
+            
+            
             </div>
             
            

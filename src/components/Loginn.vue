@@ -228,7 +228,8 @@
 
 
           <div class="ig">
-            <div class="img0">
+            <tenimg></tenimg>
+            <!-- <div class="img0">
               <el-image :src="require('../assets/css/Image/1.jpg')" class="img1"></el-image>
 
               <div class="yincang">
@@ -273,7 +274,7 @@
                 <p><span>UP</span>逗川kshadow</p>
                 <p>9.1万播放</p>
               </div>
-            </div>
+            </div> -->
             <!-- <el-card class="beta-card">
               <div class="di2">
               <ul>
@@ -608,6 +609,7 @@
 
 <script>
 import lefttile from '@/components/Left-title/left-tile'
+import tenimg from '@/components/Left-title/tenimg'
   export default {
     data() {  
       return {
@@ -665,7 +667,8 @@ import lefttile from '@/components/Left-title/left-tile'
       }
     },
     components:{
-      lefttile
+      lefttile,
+      tenimg
     },
 
     methods: {

@@ -37,9 +37,7 @@
   </el-row>
 
   <!-- for循环渲染 -->
-  <!-- 
-    
-   -->
+  
   <!-- < div v-for="o in items" :key="o" >
    <a href="">{{o.name}}</a> 
     <br>
@@ -58,19 +56,17 @@
       <p>{{item.title}}</p>
     </div>
     </div>
+    
     <div v-for="(item,index) in topimg" :key="index.id" class="dimg">
     <img :src="item.picture" class="brimg">
-      
     <div class="tfont">
       <p>{{item.title}}</p>
     </div>
     </div>
-    
-    <!-- 第二行 -->
-    
   </el-card>
- 
-
+  <div class="ddd"> 
+  </div>
+  
   
 
 </div>
@@ -167,44 +163,19 @@ export default {
 </script>
   
 <style lang="less" scoped>
+.ddd{
+  width: 1200px;
+  height: 15px;
+  position: relative;
+  top: -142px;
+  background-color: white;
+}
 .tenimg{
   width: 1200px;
   height: 280px;
   background-color: #00a0d600;
 }
 
-// new
-.img0 {
-    margin-left: 0.3%;
-    margin-top: 0.2%;
-  }
-
-  .img1 {
-    width: 206px;
-    height: 116px;
-    border-radius: 4px;
-  }
-.yincang {
-    position: relative;
-    width: 206px;
-    height: 114px;
-    color: white;
-    font-size: 14px;
-    border-radius: 4px;
-    padding-bottom: -10%;
-    background-color: #ff8484;
-    margin-top: -30%;
-    transform: translateY(0px);
-    transition: .1s linear;
-    padding: 0px 2px
-  }
-
-  .img0:hover .yincang {
-    transform: translateY(-73.6px);
-    background-color: rgba(34, 20, 20, 0.6);
-    //transition: .1s linear;
-  }
-// end
 .dimg{
   position: relative;
   float: left;
@@ -215,9 +186,6 @@ export default {
   margin-left: 10px;
   width: 206px;
   height: 119px;
-  // -webkit-border-radius:4px;
-  // -moz-border-radius:4px;
-  //padding-left: 10px;
   border-radius: 4px;
 
 }
@@ -232,9 +200,9 @@ export default {
 .dfont{
   position: relative;
   left: 10px;
-  top: -10px;
+  top: -25px;
   width: 206px;
-  height: 119px;
+  height: 120px;
   border-radius: 4px;
   background: rgba(0, 0, 0, 0);
   font-size: 1px;
@@ -253,22 +221,21 @@ export default {
   color: white;
   top:-131px;
   transform: translateY(0px);
-
   transition: .2s ease-out;
-  
 
 }
 .dimg:hover .tfont{
-  transform: translateY(-105px);
+  transform: translateY(-106px);
   height: 119px;
   background-color: rgba(51, 51, 51, 0.431);
+  border-radius: 4px;
   color: white;
 }
 
 .dimg:hover .dfont{
-  
-  transform: translateY(-115px);
+  transform: translateY(-101px);
   background-color: rgba(51, 51, 51, 0.431);
+  border-radius: 4px;
   color: white;
 }
 // Beta End

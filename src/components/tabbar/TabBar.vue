@@ -61,7 +61,7 @@
     <div v-for="(item,index) in topimg" :key="index.id" class="dimg">
     <img :src="item.picture" class="brimg">
       
-    <div class="dfont">
+    <div class="tfont">
       <p>{{item.title}}</p>
     </div>
     </div>
@@ -69,7 +69,7 @@
     <!-- 第二行 -->
     
   </el-card>
-  <!--  -->
+ 
 
   
 
@@ -167,6 +167,11 @@ export default {
 </script>
   
 <style lang="less" scoped>
+.tenimg{
+  width: 1200px;
+  height: 280px;
+  background-color: #00a0d600;
+}
 
 // new
 .img0 {
@@ -237,16 +242,29 @@ export default {
   transition: .2s linear;
  
 }
-// .pfont{
-//   color: pink;
-//   position: relative;
-//   transform: translateY(0px);
-//   transition: .3s linear;
-//   top: 125px;  
-// }
-// .ding:hover .pfont{
-//   transform: translateY(-125px);
-// }
+.tfont{
+  position: relative;
+  left: 10px;
+  width: 206px;
+  height: 14px;
+  border-radius: 4px;
+  background: #da343400;
+  font-size: 1px;
+  color: white;
+  top:-131px;
+  transform: translateY(0px);
+
+  transition: .2s ease-out;
+  
+
+}
+.dimg:hover .tfont{
+  transform: translateY(-105px);
+  height: 119px;
+  background-color: rgba(51, 51, 51, 0.431);
+  color: white;
+}
+
 .dimg:hover .dfont{
   
   transform: translateY(-115px);

@@ -274,7 +274,7 @@
                 <p>9.1万播放</p>
               </div>
             </div>
-            <el-card class="beta-card">
+            <!-- <el-card class="beta-card">
               <div class="di2">
               <ul>
               <li v-for=" (i,index) in tenimg" :key="index">
@@ -285,7 +285,7 @@
               </li>
             </ul>
             </div>
-            </el-card>
+            </el-card> -->
             
 
 
@@ -501,72 +501,6 @@
                 <el-tab-pane label="直播排行" name="first">
                   <!-- 直播子菜单选项 -->
                   <div class="live-show">
-                    <!-- <el-card class="live-card">
-                      <el-row :gutter="20">
-                        <div class="card-1">
-                          <el-col :span="3" class="live-col">
-                            <a href=""></a>
-                            <span class="live-number" :index="indexMethod">1</span>
-                          </el-col>
-                        </div>
-
-                        <div class="card-2">
-                          <el-col :span="5" class="live-col">
-                            <el-avatar :size="43" :src="circleUrl" class="avtars" alt="请重新加载"></el-avatar>
-                            
-                          </el-col>
-                        </div>
-                        
-                          <el-col :span="8">
-                            <ul style="list-style:none" class="card-3">
-                              <li class="show-username">  <b>逍遥散人</b> </li>
-                              <li>欢乐赛马 自由奔跑</li>
-                           
-                            </ul>
-                            
-                          </el-col>
-                        
-                        <el-col :span="2">
-                          <a class="el-icon-user-solid show-number" >281.2万</a>
-                        </el-col>
-
-                      </el-row>
-                      <div>    
-                      </div>
-                    </el-card> 
-                    <el-card class="live-card">
-                      <el-row :gutter="20">
-                        <div class="card-1">
-                          <el-col :span="3" class="live-col">
-                            <a href=""></a>
-                            <span class="live-number" :index="indexMethod">1</span>
-                          </el-col>
-                        </div>
-
-                        <div class="card-2">
-                          <el-col :span="5" class="live-col">
-                            <el-avatar :size="43" :src="circleUrl" class="avtars" alt="请重新加载"></el-avatar>
-                            
-                          </el-col>
-                        </div>
-                        
-                          <el-col :span="8">
-                            <ul style="list-style:none" class="card-3">
-                              <li class="show-username">  <b>逍遥散人</b> </li>
-                              <li>欢乐赛马 自由奔跑</li>
-                           
-                            </ul>
-                            
-                          </el-col>
-                        
-                        <el-col :span="2">
-                          <a class="el-icon-user-solid show-number" >281.2万</a>
-                        </el-col>
-
-                      </el-row>
-                      <div>    
-                      </div>
-                    </el-card>  -->
                     
                     
                      <lefttile></lefttile>

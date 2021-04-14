@@ -77,8 +77,28 @@
     
   </div> -->
   
-  <p class="make-wrap">尖椒啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
-  <img src="../../assets/css/main-img/center-img3.png" alt="">
+  <!-- <p class="make-wrap">尖椒啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+    <img src="../../assets/css/main-img/center-img3.png" alt=""> -->
+  <el-card class="tenimg" >
+    <div v-for="(item,index) in topimg" :key="index.id" class="dimg">
+    <img :src="item.picture" class="elimg">
+      
+    <div class="dfont">
+      <p>{{item.title}}</p>
+    </div>
+    </div>
+    <div v-for="(item,index) in topimg" :key="index.id" class="dimg">
+    <img :src="item.picture" class="brimg">
+      
+    <div class="dfont">
+      <p>{{item.title}}</p>
+    </div>
+    </div>
+    
+    <!-- 第二行 -->
+    
+  </el-card>
+  <!--  -->
 
 
 
@@ -89,57 +109,80 @@
 export default {
   data () {
     return {
-      titles:[
-      {
-        id:1,
-        url:require("../../assets/css/Image/qe.png"),
-        name:'Gordon Ramsay',
-        signature:"It's Fucking raw!",
-        count:'1622.8万'
-      },  
-      {
-        id:2,
-        url:require("../../assets/css/Image/qe.png"),
-        name:'Apple',
-        signature:'4月春季Apple新品发布会',
-        count:'2312.8万'
+      // titles:[
+      // {
+      //   id:1,
+      //   url:require("../../assets/css/Image/qe.png"),
+      //   name:'Gordon Ramsay',
+      //   signature:"It's Fucking raw!",
+      //   count:'1622.8万'
+      // },  
+      // {
+      //   id:2,
+      //   url:require("../../assets/css/Image/qe.png"),
+      //   name:'Apple',
+      //   signature:'4月春季Apple新品发布会',
+      //   count:'2312.8万'
 
-      },
-      {
-        id:3,
-        url:require("../../assets/css/main-img/center-img3.png"),
-        name:'SpeedSport',
-        signature:'價值一千萬地Ferrari sf90',
-        count:'120.6万',
-      },
-      ],
-      items: [
+      // },
+      // {
+      //   id:3,
+      //   url:require("../../assets/css/main-img/center-img3.png"),
+      //   name:'SpeedSport',
+      //   signature:'價值一千萬地Ferrari sf90',
+      //   count:'120.6万',
+      // },
+      // ],
+      // items: [
        
-      {
-        id:4,
-        url:require("../../assets/css/main-img/center-img3.png"),
-        name:'Shmee',
-        signature:'Hello everyone,I Shmeedd',
-        count:'300.3万',
+      // {
+      //   id:4,
+      //   url:require("../../assets/css/main-img/center-img3.png"),
+      //   name:'Shmee',
+      //   signature:'Hello everyone,I Shmeedd',
+      //   count:'300.3万',
 
-      },
-      {
-        id:5,
-        url:require("../../assets/css/main-img/center-img4.png"),
-        name:'XRX',
-        signature:'歡迎收看XRX得Channel啦',
-        count:'157.9万',
-      },
-      {
-        id:6,
-        url:require("../../assets/css/main-img/center-img10.webp"),
-        name:'極速拍檔-jacky-jojo',
-        signature:'7200幹Ta!!!',
-        count:'107.3万',
+      // },
+      // {
+      //   id:5,
+      //   url:require("../../assets/css/main-img/center-img4.png"),
+      //   name:'XRX',
+      //   signature:'歡迎收看XRX得Channel啦',
+      //   count:'157.9万',
+      // },
+      // {
+      //   id:6,
+      //   url:require("../../assets/css/main-img/center-img10.webp"),
+      //   name:'極速拍檔-jacky-jojo',
+      //   signature:'7200幹Ta!!!',
+      //   count:'107.3万',
         
-      },
+      // },
       
       
+      // ],
+      topimg:[
+        {
+          id:0,picture:require('../../assets/css/Image/ApLOGO.webp'),
+          title:'赛博朋克2077里的地铁真的能坐！体验堪比过山车！'
+        },
+        {
+          id:1,picture:require('../../assets/css/Image/ApLOGO.webp'),
+          title:'The special event is on Tuesday,April 20,at Apple Park in Cupertino, CA. You canget all the details on Apple.com'
+        },
+        {
+          id:2,picture:require('../../assets/css/Image/4.webp'),
+          title:'Tom and Jerry'
+
+        },
+        {
+          id:3,picture:require('../../assets/css/Image/amen.webp'),
+          title:'ドラえもん'
+        },
+        {
+          id:4,picture:require('../../assets/css/Image/2.jpg'),
+          title:'名探偵コナン'
+        }
       ],
 
       
@@ -153,6 +196,95 @@ export default {
 </script>
   
 <style lang="less" scoped>
+// new
+.img0 {
+    margin-left: 0.3%;
+    margin-top: 0.2%;
+  }
+
+  .img1 {
+    width: 206px;
+    height: 116px;
+    border-radius: 4px;
+  }
+.yincang {
+    position: relative;
+    width: 206px;
+    height: 114px;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    padding-bottom: -10%;
+    background-color: #ff8484;
+    margin-top: -30%;
+    transform: translateY(0px);
+    transition: .1s linear;
+    padding: 0px 2px
+  }
+
+  .img0:hover .yincang {
+    transform: translateY(-73.6px);
+    background-color: rgba(34, 20, 20, 0.6);
+    //transition: .1s linear;
+  }
+// end
+.dimg{
+  position: relative;
+  float: left;
+  
+  }
+.elimg{
+  position: relative;
+  margin-left: 10px;
+  width: 206px;
+  height: 119px;
+  // -webkit-border-radius:4px;
+  // -moz-border-radius:4px;
+  //padding-left: 10px;
+  border-radius: 4px;
+
+}
+.brimg{
+   position: relative;
+  margin-left: 10px;
+  width: 206px;
+  height: 119px;
+  // -webkit-border-radius:4px;
+  // -moz-border-radius:4px;
+  //padding-left: 10px;
+  border-radius: 4px;
+}
+.dfont{
+ 
+  position: relative;
+  left: 10px;
+  top: -10px;
+  width: 206px;
+  height: 119px;
+  border-radius: 4px;
+  background: rgb(0, 0, 0);
+  font-size: 1px;
+  transform: translateY(0px);
+  transition: .2s linear;
+ 
+}
+// .pfont{
+//   color: pink;
+//   position: relative;
+//   transform: translateY(0px);
+//   transition: .3s linear;
+//   top: 125px;  
+// }
+// .ding:hover .pfont{
+//   transform: translateY(-125px);
+// }
+.dimg:hover .dfont{
+  
+  transform: translateY(-115px);
+  background-color: rgba(51, 51, 51, 0.431);
+  color: white;
+}
+// Beta End
 // 組件Css
   a{
 

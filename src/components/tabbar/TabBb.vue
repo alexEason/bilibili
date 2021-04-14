@@ -74,19 +74,28 @@
   <el-card class="tencard">
   <ul > 
     <li v-for="(item,index) in topimg" :key="index" class="ulimg">
-      
+
+      <!-- <div class="liing">
       <el-image
-        :src="item.picture" class="liimg"
+        :src="item.picture" class="elimg"
         ></el-image>
         <br/>
-      <el-image
-        :src="item.picture" class="liimg"
-        ></el-image>
-      <el-card class="font-card">
+        <div class="font-card">
         <p>{{item.title}}</p>
-        <br/>UP
-        
-      </el-card>
+        <br/>UP   
+      </div>
+      </div> -->
+      <div class="liing">
+              <el-image :src="item.picture" class="elimg"></el-image>
+              <div class="font-card">
+                <p> {{item.title}}</p>
+                
+              </div>
+            </div>
+      <!-- <el-image
+        :src="item.picture" class="liimg"
+        ></el-image> -->
+      
         <!-- <p>{{item.title}}</p> -->
       
 
@@ -101,15 +110,8 @@
     style="width: 100px; height: 100px"
     :src="imgUrl.imgId"
     ></el-image> -->
-           
-       
-           
 
-         
 
-        
-
-        
   </div>
 </template>
 
@@ -148,7 +150,7 @@ export default {
           title:'ドラえもん'
         },
         {
-          picture:require('../../assets/css/main-img/center-img6.webp'),
+          picture:require('../../assets/css/Image/2.jpg'),
           title:'名探偵コナン'
         }
       ]
@@ -170,7 +172,7 @@ export default {
   //                    var testH=document.getElementById("test-div");
   //                   testH.style.height= this.bannerHeight+"px";
   //              })
-  //    },
+  //    }
 
     
   // },
@@ -203,14 +205,22 @@ export default {
   list-style: none;
   padding-left:10px;
 }
+.el-img{
+  width: 206px;
+  height: 119px;
+}
 
 .liimg{
   position: relative;
   right: 20px;
-  //float: left;
   width: 206px;
   height:119px;
   border-radius: 4px;
+  transform: translateY(0px);
+  transition: .1s linear;
+}
+.liimg :hover .font-card{
+  transform: translateY(-100px);
 }
 .font-card{
   position: relative;
@@ -223,6 +233,7 @@ export default {
 
   border-radius: 4px;
 }
+
 .font-card p{
   font-size:1px;
 }

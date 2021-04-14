@@ -37,38 +37,9 @@
   </el-row>
 
   <!-- for循环渲染 -->
-  <el-card class="live-card">
-    <div class="live-div"> 
-   <ul>
-  <li v-for=" (item,index) in titles" :key="index" class="live-number">
-    <a href="" class="title-treenum">{{item.id}}</a>
-    <el-avatar class="title-treeimg" :src="item.url"></el-avatar>
-    <a href="" class="title-name">{{item.name}}</a>
-    <br>
-    <a href="" class="title-signature">{{item.signature}}</a>
-    <br>
-    <a href="" class="el-icon-user-solid title-countt">{{item.count}}</a> 
-  </li>
-  <li v-for=" item in items" :key="item.id" class="live-number" >
-    <a href="#" class="title-number" >{{item.id}}</a>
-    <el-avatar class="title-img" :src="item.url"></el-avatar>
-    <ul>
-      <li class="title-name">{{item.name}}</li>
-    </ul>
-      <br>
-    <ul>
-      <li class="title-signature">{{item.signature}}</li>
-    </ul>
-    <br>
-    <div >
-      <a class="el-icon-user-solid title-count">{{item.count}}</a>      
-    </div>    
-    <!-- <a href="" class="title-signature" >{{i.signature}}</a> -->  
-  </li>
-  
-</ul>
-</div>
-  </el-card>
+  <!-- 
+    
+   -->
   <!-- < div v-for="o in items" :key="o" >
    <a href="">{{o.name}}</a> 
     <br>
@@ -100,7 +71,7 @@
   </el-card>
   <!--  -->
 
-
+  
 
 </div>
 </template>
@@ -196,6 +167,7 @@ export default {
 </script>
   
 <style lang="less" scoped>
+
 // new
 .img0 {
     margin-left: 0.3%;
@@ -245,24 +217,21 @@ export default {
 
 }
 .brimg{
-   position: relative;
+  position: relative;
   margin-left: 10px;
   width: 206px;
   height: 119px;
-  // -webkit-border-radius:4px;
-  // -moz-border-radius:4px;
-  //padding-left: 10px;
+  top: -111px;
   border-radius: 4px;
 }
 .dfont{
- 
   position: relative;
   left: 10px;
   top: -10px;
   width: 206px;
   height: 119px;
   border-radius: 4px;
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0);
   font-size: 1px;
   transform: translateY(0px);
   transition: .2s linear;

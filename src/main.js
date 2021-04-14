@@ -5,6 +5,9 @@ import store from './store'
 import './plugins/element.js'
 import axios from 'axios'
 import ElementUI from 'element-ui' //element-ui的全部组件
+import 'element-ui/lib/theme-chalk/base.css'
+import CollapseTransition from 'element-ui/lib/transitions/collapse-transition';
+
 //import TreeTable from 'vue-tabele-with-tree-grid'
 
 // 引入API接口
@@ -19,6 +22,7 @@ return config
 })
 
 import 'element-ui/lib/theme-chalk/index.css'//element-ui的css
+Vue.component(CollapseTransition.name, CollapseTransition)
 Vue.use(ElementUI) //使用elementUI
 Vue.prototype.$http = axios
 
@@ -34,7 +38,6 @@ Vue.directive('focus', {
 
   }
 })
-
 
 new Vue({
   router,
